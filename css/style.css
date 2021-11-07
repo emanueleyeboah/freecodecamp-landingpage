@@ -9,7 +9,7 @@
 body {
     background-image: url(../images/nba.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: contain;
     background-size: cover;
 }
 
@@ -23,9 +23,12 @@ body {
     overflow: hidden;
     float: right;
     right: 10%;
-    margin-top: 1.25rem;
+    margin-top: 1rem;
     margin-right: 2rem;
     font-size: 15px;
+    overflow: hidden;
+    position: fixed;
+    top: 0%;
 }
 
 .navbar a {
@@ -47,4 +50,66 @@ body {
 .topnav a.active {
     background-color: #04AA6D;
     color: white;
+}
+
+#video-description {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    margin-bottom: 15px;
+    background: linear-gradient(130deg, #EDEAEA 50%, #F6F5F5 35%, #8F8F8F);
+}
+
+#live-match {
+    left: 6%;
+    position: absolute;
+    bottom: -560px;
+}
+
+.form-maker {
+    bottom: -510px;
+    position: absolute;
+    left: 60%;
+    border-radius: 5px;
+    background-color: lightslategray;
+    padding: 20px;
+}
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=email],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #CBC8C8;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: linear-gradient(130deg, #EDEAEA 50%, #F6F5F5 35%, #8F8F8F);
 }
