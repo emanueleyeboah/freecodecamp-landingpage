@@ -13,10 +13,16 @@ body {
     background-size: cover;
 }
 
+
+/*Logo for the header image*/
+
 #header-img {
     padding-top: 20px;
     padding-left: 15px;
 }
+
+
+/*Navigation bar*/
 
 .navbar {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -27,9 +33,21 @@ body {
     margin-right: 2rem;
     font-size: 15px;
     overflow: hidden;
+    width: 100%;
     position: fixed;
     top: 0%;
+    left: 75%;
+    padding: 1rem 0.5rem 0.5rem 1rem;
+    color: blueviolet;
+    border-radius: 2rem;
+    /* overflow: hidden;
+    position: fixed;
+    top: 0%;
+    width: 100%;*/
 }
+
+
+/*Navigation bar links*/
 
 .navbar a {
     float: left;
@@ -40,6 +58,9 @@ body {
     text-decoration: none;
     font-size: 18px;
 }
+
+
+/*Navigation bar*/
 
 .navbar a:hover {
     background-color: #8c8989;
@@ -60,11 +81,17 @@ body {
     background: linear-gradient(130deg, #EDEAEA 50%, #F6F5F5 35%, #8F8F8F);
 }
 
+
+/*Youtube link*/
+
 #live-match {
     left: 6%;
     position: absolute;
     bottom: -560px;
 }
+
+
+/*Form*/
 
 .form-maker {
     bottom: -510px;
@@ -74,6 +101,9 @@ body {
     background-color: lightslategray;
     padding: 20px;
 }
+
+
+/*Subcription request -- Name*/
 
 input[type=text],
 select,
@@ -88,6 +118,9 @@ textarea {
     resize: vertical;
 }
 
+
+/*Subcription request -- Email*/
+
 input[type=email],
 select,
 textarea {
@@ -100,6 +133,9 @@ textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
+
+
+/*Subcription request -- Submit button*/
 
 input[type=submit] {
     background-color: #CBC8C8;
