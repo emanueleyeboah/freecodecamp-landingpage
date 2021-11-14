@@ -1,151 +1,161 @@
-* {
-    margin: 0%;
-    padding: 0%;
-}
-
-
-/*Background image*/
-
-body {
-    background-image: url(../images/nba.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-size: cover;
-}
-
-
-/*Logo for the header image*/
-
-#header-img {
-    padding-top: 20px;
-    padding-left: 15px;
-}
-
-
-/*Navigation bar*/
-
-.navbar {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    overflow: hidden;
-    float: right;
-    right: 10%;
-    margin-top: 1rem;
-    margin-right: 2rem;
-    font-size: 15px;
-    overflow: hidden;
-    width: 100%;
-    position: fixed;
-    top: 0%;
-    left: 75%;
-    padding: 1rem 0.5rem 0.5rem 1rem;
-    color: blueviolet;
-    border-radius: 2rem;
-    /* overflow: hidden;
-    position: fixed;
-    top: 0%;
-    width: 100%;*/
-}
-
-
-/*Navigation bar links*/
-
-.navbar a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 15px 10px;
-    margin: 0%;
-    text-decoration: none;
-    font-size: 18px;
-}
-
-
-/*Navigation bar*/
-
-.navbar a:hover {
-    background-color: #8c8989;
-    color: gray;
-    border-radius: 1rem;
-}
-
-.topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-}
-
-#video-description {
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    margin-bottom: 15px;
-    background: linear-gradient(130deg, #EDEAEA 50%, #F6F5F5 35%, #8F8F8F);
-}
-
-
-/*Youtube link*/
-
-#live-match {
-    left: 6%;
-    position: absolute;
-    bottom: -560px;
-}
-
-
-/*Form*/
-
-.form-maker {
-    bottom: -510px;
-    position: absolute;
-    left: 60%;
-    border-radius: 5px;
-    background-color: lightslategray;
-    padding: 20px;
-}
-
-
-/*Subcription request -- Name*/
-
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-
-/*Subcription request -- Email*/
-
-input[type=email],
-select,
-textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-
-/*Subcription request -- Submit button*/
-
-input[type=submit] {
-    background-color: #CBC8C8;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: linear-gradient(130deg, #EDEAEA 50%, #F6F5F5 35%, #8F8F8F);
-}
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+    /*Fixed navigation bar*/
+    
+    header {
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        background-color: #646161;
+        color: white;
+        padding: 1em;
+    }
+    
+    @media (max-width: 600px) {
+        header {
+            flex-wrap: wrap;
+        }
+    }
+    /*Background image*/
+    
+    body {
+        background-image: url(../images/nba.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+    /*Logo for the header image*/
+    
+    #header-img {
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+    
+    @media (max-width: 650px) {
+        #header-img {
+            margin-top: 15px;
+            width: 100%;
+            position: relative;
+        }
+    }
+    /*Navigation bar*/
+    
+    .navbar {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        overflow: hidden;
+        float: right;
+        right: 10%;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        font-size: 15px;
+        overflow: hidden;
+        width: 100%;
+        position: fixed;
+        top: 0%;
+        left: 75%;
+        padding: 1rem 0.5rem 0.5rem 1rem;
+        color: blueviolet;
+        border-radius: 2rem;
+    }
+    /*Navigation bar links*/
+    
+    .navbar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px 10px;
+        margin: 0%;
+        text-decoration: none;
+        font-size: 18px;
+    }
+    /*Navigation bar*/
+    
+    .navbar a:hover {
+        background-color: #8c8989;
+        color: gray;
+        border-radius: 1rem;
+    }
+    
+    .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+    
+    #video-description {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 25px;
+        margin-bottom: 15px;
+        background: linear-gradient(130deg, #EDEAEA 50%, #F6F5F5 35%, #8F8F8F);
+    }
+    /*Youtube link*/
+    
+    #live-match {
+        display: grid;
+        left: 6%;
+        position: absolute;
+        bottom: -38em;
+    }
+    /*Form*/
+    
+    .form-maker {
+        bottom: -35em;
+        position: absolute;
+        left: 60%;
+        border-radius: 5px;
+        background-color: lightslategray;
+        padding: 20px;
+    }
+    /*Subcription request -- Name*/
+    
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    /*Subcription request -- Email*/
+    
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    /*Subcription request -- Submit button*/
+    
+    input[type=submit] {
+        background-color: #CBC8C8;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    
+    input[type=submit]:hover {
+        background-color: linear-gradient(130deg, #EDEAEA 50%, #F6F5F5 35%, #8F8F8F);
+    }
+    
+    @media (max-width: 600px) {
+        body {
+            background-color: lightblue;
+        }
+    }
