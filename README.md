@@ -8,3 +8,5 @@ which comprises
 3. Match fixtures
 
 Kindly check the project on this link:https://emanueleyeboah.github.io/freecodecamp-landingpage/
+
+It's responsiveness will be added very soon.
