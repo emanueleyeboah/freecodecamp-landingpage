@@ -6,66 +6,126 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="nav.js">
     <title>Document</title>
+
+
+
+
 </head>
 
-<body id="home">
 
-
-    <!--Header for the page-->
-    <header id="header">
-
-        <!--Navigation bar-->
-        <nav id="nav-bar">
-
-            <!--Logo for the page-->
-            <img id="header-img" src="https://upload.wikimedia.org/wikipedia/de/thumb/1/1e/NBA.svg/1200px-NBA.svg.png" width="40px" height="60px" alt="">
-
-            <!--Fixed navigation bar-->
-            <div class="navbar">
-                <a href="#home" class="nav-link"> <em> Home</em></a>
-                <a href="#Live-Match" class="nav-link"><em>Live Match</em></a>
-                <a href="#fill-in" class="nav-link"><em>Fill-In</em></a>
-            </div>
-
-        </nav>
-
-    </header>
-
-
-
-    <!--Youtube  video link-->
-
-    <div id="live-match">
-        <a id="Live-Match"></a>
-        <p id="video-description"> <em>2019 NBA Slam Dunk Contest</em></p>
-        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/dvfn-mGGP8E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
+<body>
+    <div id="first-line">
+        TOP 5 MOST DEVELOPED COUNTRIES IN AFRICA IN 2021
     </div>
 
+    <main id="main-doc">
 
-    <!--Subscription Request-->
+        <section class="main-section" id="Mauritius">
+            <header id="country-one">Mauritius</header>
 
-    <div class="form-maker" id="fill-in">
-        <form id="form" action="https://www.freecodecamp.com/email-submit">
-            <label for="name">Full Name</label>
-            <input type="text" id="name" placeholder="Your name..">
+            <ul>
+                <li>
+                    <p>Mauritius, an Indian Ocean island nation, is known for its beaches, lagoons and reefs. </p>
+                </li>
 
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Your email..">
+                <li> The mountainous interior includes Black River Gorges National Park, with rainforests, waterfalls, hiking trails and wildlife like the flying fox.
+                </li>
 
-            <input id="submit" type="submit" value="Submit">
-
-
-        </form>
+                <li><code>Capital Port</code> Louis has sites such as the Champs de Mars horse track, Eureka plantation, house and 18th-century Sir Seewoosagur Ramgoolam Botanical Gardens</li>
+            </ul>
 
 
-    </div>
+
+            <p><strong>It's capital is Port Louis </strong></p>
+
+
+        </section>
+        <br>
+
+        <section class="main-section" id="Seychelles">
+            <header id="country-two">Seychelles</header>
+
+            <p>The Seychelles is an archipelago of 115 islands in the Indian Ocean, off East Africa. It's home to numerous beaches, coral reefs and nature reserves, as well as rare animals such as giant Aldabra tortoises. Mahé, a hub for visiting the other
+                <code>islands</code> , is home to capital Victoria. It also has the mountain rainforests of Morne Seychellois National Park and beaches, including Beau Vallon and Anse Takamaka</p>
+            <p><strong>It's capital is Victoria</strong></p>
+
+        </section>
+
+
+        <section class="main-section" id="Algeria">
+            <header id="country-three">Algeria</header>
+
+            <p>Algeria is a North African country with a Mediterranean coastline and a Saharan desert interior. Many empires have left legacies here, such as the ancient Roman ruins in seaside Tipaza. In the capital, Algiers, Ottoman landmarks like circa-1612
+                <code>Ketchaoua Mosque</code> line the hillside Casbah quarter, with its narrow alleys and stairways. The city’s Neo-Byzantine basilica Notre Dame d’Afrique dates to French colonial rule</p>
+            <p> <strong> It's capital is Algiers</strong></p>
+        </section>
+
+
+        <section class="main-section" id="Tunisia">
+            <header id="country-four">Tunisia</header>
+
+            <p>Tunisia, officially the Republic of Tunisia, is the northernmost country in Africa. It is a part of the Maghreb region of North Africa, and is bordered by Algeria to the west and southwest, Libya to the southeast, and the Mediterranean Sea
+                to the north and east; covering <code>163,610 km²</code> , with a population of 11 million</p>
+
+            <p id="Tunisia-capital"> <strong>It's capital is Tunis</strong> </p>
+
+        </section>
+
+
+        <section class="main-section" id="Botswana">
+            <header id="country-five">Botswana</header>
+            <ul>
+                <li>
+                    <p>Botswana, a landlocked country in Southern Africa, has a landscape defined by the Kalahari Desert and the Okavango Delta, which becomes a lush animal habitat during the seasonal floods</p>
+                </li>
+
+                <li>
+                    <p> The massive <code>Central Kalahari Game Reserve</code> , with its fossilized river valleys and undulating grasslands, is home to numerous animals including giraffes, cheetahs, hyenas and wild dogs.</p>
+                </li>
+            </ul>
+
+
+
+            <p> <strong> It's capital is Gaborone </strong></p>
+        </section>
+
+
+
+    </main>
+
+    <nav id="navbar">
+        <span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; <header><em>Africa</em></header> </span>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a class="nav-link" href="#Mauritius">Mauritius</a>
+            <a class="nav-link" href="#Seychelles">Seychelles</a>
+            <a class="nav-link" href="#Algeria">Algeria</a>
+            <a class="nav-link" href="#Tunisia">Tunisia</a>
+            <a class="nav-link" href="#Botswana">Botswana</a>
+
+        </div>
+    </nav>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+
+
 
 </body>
-
-<!--Freecode camp project tester-->
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+
 
 </html>
