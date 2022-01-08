@@ -1,178 +1,161 @@
-    body {
-        background-image: url(../images/background.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        color: honeydew;
-        font-family: Helvetica, Arial, sans-serif;
-        font-weight: 100;
+    * {
+        margin: 0%;
+        padding: 0%;
     }
+    /*Fixed navigation bar*/
     
-    #first-line {
-        text-align: center;
-        font-size: 2.3em;
-    }
-    
-    #main-doc {
-        padding-top: 1.23em;
-        padding-left: 1em;
-        padding-right: 1em;
-        position: relative;
-    }
-    
-    .main-section {
-        margin: 1em;
-        padding: 1em;
-        border-style: solid;
-        border-radius: 1em;
-        border-color: black;
-        width: 14em;
-    }
-    
-    #Mauritius {
-        margin-left: 10em;
-        background-image: url(../images/Mauritius.png);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    #country-one {
-        text-align: center;
-        font-size: 1.2em;
-        color: white;
-    }
-    
-    #Seychelles {
-        margin-left: 50em;
-        position: absolute;
-        top: 15px;
-        right: 5px;
-        background-image: url(../images/Seychelles.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        color: black;
-        font-weight: 100;
-    }
-    
-    #country-two {
-        text-align: center;
-        font-size: 1.2em;
-    }
-    
-    #Algeria {
-        position: absolute;
-        right: 20px;
-        top: 500px;
-        background-image: url(../images/algeria.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        color: black;
-    }
-    
-    #country-three {
-        text-align: center;
-        font-size: 1.2em;
-    }
-    
-    #Tunisia {
-        position: absolute;
-        top: 200px;
-        right: 400px;
-        background-image: url(../images/Tunisia.png);
-        background-repeat: no-repeat;
-        font-weight: 100;
-    }
-    
-    #country-four {
-        text-align: center;
-        font-size: 1.2em;
-        color: white;
-    }
-    
-    #Tunisia-capital {
-        color: black;
-        font-weight: 100;
-    }
-    
-    #Botswana {
-        position: absolute;
-        left: 150px;
-        bottom: -477px;
-        background-image: url(../images/botswana.png);
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-    
-    #country-five {
-        text-align: center;
-        font-size: 1.2em;
-        color: white;
-    }
-    
-    .sidenav {
-        height: 100%;
-        width: 0;
+    header {
+        display: flex;
+        flex-direction: row;
         position: fixed;
-        z-index: 1;
+        width: 100%;
         top: 0;
         left: 0;
-        background-color: #111;
-        overflow-x: hidden;
-        transition: 0.5s;
-        padding-top: 60px;
+        background-color: #646161;
+        color: white;
+        padding: 1em;
     }
     
-    .sidenav a {
-        padding: 8px 8px 8px 32px;
+    @media (max-width: 600px) {
+        header {
+            flex-wrap: wrap;
+        }
+    }
+    /*Background image*/
+    
+    body {
+        background-image: url(../images/nba.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: cover;
+    }
+    /*Logo for the header image*/
+    
+    #header-img {
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+    
+    @media (max-width: 650px) {
+        #header-img {
+            margin-top: 15px;
+            width: 100%;
+            position: relative;
+        }
+    }
+    /*Navigation bar*/
+    
+    .navbar {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        overflow: hidden;
+        float: right;
+        right: 10%;
+        margin-top: 1rem;
+        margin-right: 2rem;
+        font-size: 15px;
+        overflow: hidden;
+        width: 100%;
+        position: fixed;
+        top: 0%;
+        left: 75%;
+        padding: 1rem 0.5rem 0.5rem 1rem;
+        color: blueviolet;
+        border-radius: 2rem;
+    }
+    /*Navigation bar links*/
+    
+    .navbar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 15px 10px;
+        margin: 0%;
         text-decoration: none;
+        font-size: 18px;
+    }
+    /*Navigation bar*/
+    
+    .navbar a:hover {
+        background-color: #8c8989;
+        color: gray;
+        border-radius: 1rem;
+    }
+    
+    .topnav a.active {
+        background-color: #04AA6D;
+        color: white;
+    }
+    
+    #video-description {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: 25px;
-        color: #818181;
-        display: block;
-        transition: 0.3s;
+        margin-bottom: 15px;
+        background: linear-gradient(130deg, #EDEAEA 50%, #F6F5F5 35%, #8F8F8F);
     }
+    /*Youtube link*/
     
-    .sidenav a:hover {
-        color: #f1f1f1;
-    }
-    
-    .sidenav .closebtn {
+    #live-match {
+        display: grid;
+        left: 6%;
         position: absolute;
-        top: 0;
-        right: 25px;
-        font-size: 36px;
-        margin-left: 50px;
+        bottom: -38em;
     }
+    /*Form*/
     
-    nav {
+    .form-maker {
+        bottom: -35em;
         position: absolute;
-        top: 60px;
+        left: 60%;
+        border-radius: 5px;
+        background-color: lightslategray;
+        padding: 20px;
+    }
+    /*Subcription request -- Name*/
+    
+    input[type=text],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    /*Subcription request -- Email*/
+    
+    input[type=email],
+    select,
+    textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    /*Subcription request -- Submit button*/
+    
+    input[type=submit] {
+        background-color: #CBC8C8;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
     }
     
-    span>header {
-        margin-top: 5px;
-        font-family: cursive;
+    input[type=submit]:hover {
+        background-color: linear-gradient(130deg, #EDEAEA 50%, #F6F5F5 35%, #8F8F8F);
     }
-    /* @media screen and (max-height: 570px) {
-        .sidenav {
-            padding-top: 15px;
-        }
-        .sidenav a {
-            font-size: 18px;
-        }
-        #Seychelles {
-            margin-right: 80px;
-            margin-top: 350px;
-            position: absolute;
-            top: 15px;
-            right: 5px;
-        }
-    }
-    */
     
-    @media screen and (max-height: 450px) {
-        #navbar {
-            padding-top: 15px;
-        }
-        #navbar a {
-            font-size: 18px;
+    @media (max-width: 600px) {
+        body {
+            background-color: lightblue;
         }
     }
