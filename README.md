@@ -1,7 +1,10 @@
-# freecodecamp-landingpage
-This is my third free code project which centers on sample of an NBA landing page .
-Kindly check the project on this link:https://emanueleyeboah.github.io/freecodecamp-landingpage/
+freecodecamp-landingpage
 
-NB: Not yet responsive
+This is a complete  graded landing page project given by Freecode camp under the responsive certificate program.
+
+
+Click the link below to check the project:
+
+https://emanueleyeboah.github.io/Freecodecamp-surveyprojec
 
 Project in progress 
