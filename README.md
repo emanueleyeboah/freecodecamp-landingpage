@@ -5,6 +5,6 @@ This is a complete  graded landing page project given by Freecode camp under the
 
 Click the link below to check the project:
 
-https://emanueleyeboah.github.io/Freecodecamp-surveyprojec
+https://emanueleyeboah.github.io/Freecodecamp-landingpage
 
 Project in progress 
